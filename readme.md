@@ -46,7 +46,7 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
      SELECT ograd, ogrsoyad,sinif FROM ogrenci where sinif='10A' OR sinif='10B'
 
     7) Öğrenci tablosundaki öğrencinin adını, soyadını ve numarasını okul numarası olarak listeleyiniz. (as kullanım örneği)
-    SELECT ogrenci.ograd, ogrenci.ogrsoyad, islem.ogrno AS okulnumarasi FROM ogrenci
+    SELECT ogrenci.ograd, ogrenci.ogrsoyad, ogrno AS okulnumarasi FROM ogrenci
 
     8) Öğrenci tablosundaki öğrencinin adını ve soyadını birleştirip, adsoyad olarak listeleyiniz. (concat, as kullanım örneği)
     SELECT CONCAT(ograd, ' ' , ogrsoyad) AS adsoyad FROM ogrenci;
